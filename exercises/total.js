@@ -6,8 +6,16 @@
  *
  */
 
+function total (number){
+    let resultat = 0;
+    for (let i = 0; i < number.length; i++){
+        resultat += number[i];
+    }
+    return resultat;
+}
 
-//* Begin of tests
+
+ //* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof total, 'function')
